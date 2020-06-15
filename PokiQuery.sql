@@ -20,3 +20,17 @@
 --LEFT JOIN Gender gender ON gender.Id = author.GenderId
 --ORDER BY author.NAME;
 
+--7
+--SELECT SUM(WORDCOUNT) FROM POEM;
+
+--8
+--SELECT TOP 1 CHarCount, Title FROM poem
+--ORDER BY CHARCOUNT;
+
+--9
+--SELECT COUNT(Id) FROM Author
+--WHERE GradeId = 3; 
+
+--10
+--SELECT COUNT(Id) FROM Author
+--WHERE GradeId = 3 OR GradeId = 2 OR GradeId = 1;
