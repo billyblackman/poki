@@ -46,3 +46,9 @@
 --JOIN AUTHOR author ON poem.AuthorId = author.Id
 --group by author.GradeId
 --order by author.GradeId;
+
+--13
+SELECT COUNT(author.Id) AS 'author count', grade.Id as 'grade' FROM AUTHOR author
+JOIN GRADE grade ON author.GradeId = grade.Id
+GROUP BY grade.Id
+ORDER BY grade.Id;
