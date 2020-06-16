@@ -34,3 +34,15 @@
 --10
 --SELECT COUNT(Id) FROM Author
 --WHERE GradeId = 3 OR GradeId = 2 OR GradeId = 1;
+
+--11
+--SELECT COUNT(poem.Id) as 'poem count', author.GradeId FROM Poem poem
+--JOIN AUTHOR author ON author.Id = poem.AuthorId
+--WHERE author.GradeId = 4
+--GROUP BY author.GradeId;
+
+--12
+--SELECT COUNT(poem.Id) as 'poem count', author.GradeId FROM Poem poem
+--JOIN AUTHOR author ON poem.AuthorId = author.Id
+--group by author.GradeId
+--order by author.GradeId;
